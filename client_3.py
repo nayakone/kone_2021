@@ -5,7 +5,7 @@ import time
 TimeToWait= 10 # Time to sleep it can be set to any number for testing (1,2 etc)
 
 
-def data_Of_Client():
+def client_socket():
     flag = b'Alive'
     host = '127.0.0.1'
     port = 2345
@@ -28,7 +28,7 @@ def data_Of_Client():
                 break
 
 
-def read_status():
+def r_st():
     with open("status_3.txt", "r") as status:
         data = status.read()
 
@@ -38,7 +38,7 @@ def read_status():
 
 
 def main():
-    data_Of_Client()
+    clinet_socket()
 
 
 main()
